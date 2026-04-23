@@ -1,0 +1,20 @@
+[
+  {
+    "question": "Um produto custa R$100 à vista ou 2x de R$60. Qual é mais vantajoso?",
+    "options": ["À vista", "Parcelado"],
+    "answer": "À vista",
+    "explanation": "Parcelado = 120, à vista = 100"
+  },
+  {
+    "question": "Juros simples: R$200 a 10% ao mês por 2 meses. Total?",
+    "options": ["R$220", "R$240", "R$260"],
+    "answer": "R$240",
+    "explanation": "J = 200*0.1*2 = 40 → total 240"
+  },
+  {
+    "question": "Juros compostos: R$100 a 10% por 2 meses. Total aproximado?",
+    "options": ["R$120", "R$121", "R$122"],
+    "answer": "R$121",
+    "explanation": "100*(1.1)^2 = 121"
+  }
+]
