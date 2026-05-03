@@ -10,12 +10,19 @@
     </head>
     
     <body>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Alternar para tema escuro">
+            Tema escuro
+        </button>
+
         <div class="container">
-            <!-- <h1>Jogo: Compras e Juros</h1> -->
+            <h1>Jogo de Compras e Juros</h1>
+            <div class="status-bar">
+                <div class="stat lives-stat" id="lives" aria-label="Vidas: 3"></div>
+                <span class="stat" id="score">Pontos: 0</span>
+            </div>
             <div class="question" id="question"></div>
             <div class="options" id="options"></div>
             <div class="feedback" id="feedback"></div>
-            <div class="score" id="score"></div>
         </div>
     </body>
 </html>
