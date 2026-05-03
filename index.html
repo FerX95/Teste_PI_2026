@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jogo de Juros e Compras - v0.1</title>
+        <title>Jogo de Juros e Compras - v0.5</title>
         <link rel="stylesheet" href="css/estilo.css">
         <script defer src="js/action.js"></script>
     </head>
@@ -15,14 +15,88 @@
         </button>
 
         <div class="container">
-            <h1>Jogo de Compras e Juros</h1>
-            <div class="status-bar">
-                <div class="stat lives-stat" id="lives" aria-label="Vidas: 3"></div>
-                <span class="stat" id="score">Pontos: 0</span>
+            <h1>Jogo de Juros e Compras</h1>
+
+            <div class="start-screen" id="start-screen">
+                <label class="player-label" for="player-name">Nome do jogador</label>
+                <input class="player-input" id="player-name" type="text" maxlength="24" placeholder="Digite seu nome">
+
+                <fieldset class="avatar-field">
+                    <legend>Escolha seu avatar</legend>
+                    <div class="avatar-grid">
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_01.png" checked>
+                            <img src="img/avatars/avatar_01.png" alt="Avatar 1">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_02.png">
+                            <img src="img/avatars/avatar_02.png" alt="Avatar 2">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_03.png">
+                            <img src="img/avatars/avatar_03.png" alt="Avatar 3">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_04.png">
+                            <img src="img/avatars/avatar_04.png" alt="Avatar 4">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_05.png">
+                            <img src="img/avatars/avatar_05.png" alt="Avatar 5">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_06.png">
+                            <img src="img/avatars/avatar_06.png" alt="Avatar 6">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_07.png">
+                            <img src="img/avatars/avatar_07.png" alt="Avatar 7">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_08.png">
+                            <img src="img/avatars/avatar_08.png" alt="Avatar 8">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_09.png">
+                            <img src="img/avatars/avatar_09.png" alt="Avatar 9">
+                        </label>
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="img/avatars/avatar_10.png">
+                            <img src="img/avatars/avatar_10.png" alt="Avatar 10">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button class="start-button" id="start-button" type="button">Iniciar jogo</button>
+                <button class="help-button" id="help-button" type="button">Ajuda</button>
             </div>
-            <div class="question" id="question"></div>
-            <div class="options" id="options"></div>
-            <div class="feedback" id="feedback"></div>
+
+            <div class="help-screen hidden" id="help-screen">
+                <h2>Como jogar</h2>
+                <p>Responda as perguntas sobre juros e compras escolhendo uma das alternativas.</p>
+                <p>Voce comeca com 3 vidas. A cada resposta errada, perde 1 vida. O jogo termina quando as perguntas acabam ou quando suas vidas chegam a zero.</p>
+
+                <h2>Regra de pontuacao</h2>
+                <ul class="help-list">
+                    <li>Resposta correta em ate 2 minutos: 100 pontos.</li>
+                    <li>Resposta correta em ate 4 minutos: 50 pontos.</li>
+                    <li>Resposta correta depois de 4 minutos: 10 pontos.</li>
+                    <li>Resposta errada nao soma pontos.</li>
+                </ul>
+
+                <button class="back-button" id="back-button" type="button">Voltar ao inicio</button>
+            </div>
+
+            <div class="game-screen hidden" id="game-screen">
+                <div class="status-bar">
+                    <div class="stat lives-stat" id="lives" aria-label="Vidas: 3"></div>
+                    <span class="stat" id="score">Pontos: 0</span>
+                </div>
+                <div class="question-progress" id="question-progress">Questao 1 de 1</div>
+                <div class="question" id="question"></div>
+                <div class="options" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
         </div>
     </body>
 </html>

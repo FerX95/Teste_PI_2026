@@ -16,5 +16,23 @@
     "options": ["R$120", "R$121", "R$122"],
     "answer": "R$121",
     "explanation": "100 x (1.1)^2 = 121."
+  },
+  {
+    "question": "João comprou um celular por R$ 1.000,00 e decidiu pagar após 5 meses, com uma taxa de juros simples de 2% ao mês, Qual será o valor total que João vai pagar pelo celular?",
+    "options": ["R$ 1.100,00", "R$ 1.200,00", "R$ 1.300,00"],
+    "answer": "R$ 1.100,00",
+    "explanation": "J = (1000 x 0.02) x 5 = 100, total = 1000 + 100 = 1100"
+  },
+  {
+    "question": " Em uma prova que vale 10 pontos, Ana tirou 7 pontos. Qual foi a porcentagem de acertos de Ana na prova?",
+    "options": ["65%", "70%", "75%", "80%"],
+    "answer": "70%",
+    "explanation": "10 pontos = 100%, 7 pontos = x, 10x = 700, x = 700/10, x = 70%"
+  },
+  {
+    "question": " Um produto no supermercado custa R$ 200,00. O mercado oferece um desconto equivalente a uma taxa de 5% ao mês, durante 2 meses, calculado como juros simples sobre o valor do produto. Qual será o preço final do produto?",
+    "options": ["R$ 160,00", "R$ 170,00", "R$ 180,00"],
+    "answer": "R$ 180,00",
+    "explanation": "D = (200 x 0.05) x 2 = 20, total = 200 - 20 = 180"
   }
 ]
